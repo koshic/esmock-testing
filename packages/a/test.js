@@ -1,11 +1,14 @@
-import { S3Client } from "@aws-sdk/client-s3";
 import resolvewithplus from "resolvewithplus";
+import { fileURLToPath } from "node:url";
 
-console.log("imported:", S3Client);
-console.log();
-console.log("import.meta.resolve:", import.meta.resolve("@aws-sdk/client-s3"));
+console.log("import.meta.resolve:", import.meta.resolve("resolvewithplus"));
 console.log();
 console.log(
-  "resolvewithplus:",
-  resolvewithplus("@aws-sdk/client-s3", import.meta.url)
+  "resolvewithplus #1:",
+  resolvewithplus("resolvewithplus", import.meta.url)
+);
+console.log();
+console.log(
+  "resolvewithplus #2:",
+  resolvewithplus("resolvewithplus", fileURLToPath(import.meta.url))
 );

@@ -5,7 +5,6 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "3.410.0",
     "resolvewithplus": "2.0.2"
   }
 }
