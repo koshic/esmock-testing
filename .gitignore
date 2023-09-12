@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# yarn
+/.yarn/*
+!/.yarn/cache
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/patches
+!/.yarn/sdks
+
+# node
+node_modules/
