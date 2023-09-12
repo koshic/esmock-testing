@@ -3,5 +3,9 @@
   "workspaces": [
     "packages/*"
   ],
-  "packageManager": "yarn@4.0.0-rc.50"
+  "packageManager": "yarn@4.0.0-rc.50",
+  "dependencies": {
+    "@yarnpkg/sdks": "3.0.0-rc.50",
+    "typescript": "5.2.2"
+  }
 }
